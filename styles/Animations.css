@@ -1,0 +1,435 @@
+@keyframes float-slow {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.animate-float-slow {
+    animation-name: float-slow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.stroke-text {
+    color: white;
+    -webkit-text-stroke: 1.6px black;
+    text-stroke: 2px black;
+    transition: all 0.4s ease;
+}
+
+.black-fill-white-stroke {
+    color: black;
+    -webkit-text-stroke: 2px white;
+    text-stroke: 1px white;
+}
+.black-fill-white-stroke:hover {
+    -webkit-text-stroke: 1px darkolivegreen;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-down-expand {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-down-expand {
+    animation: slide-down-expand 0.5s ease-out forwards;
+}
+
+
+.animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out forwards;
+}
+
+.animate-slide-in-right {
+    animation: slide-in-right 0.6s ease-out forwards;
+}
+
+.animate-slide-in-top {
+    animation: slide-in-top 0.6s ease-out forwards;
+}
+
+.animate-slide-in-bottom {
+    animation: slide-in-bottom 0.6s ease-out forwards;
+}
+/* animations.css */
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes circle-keys {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes dot-keys {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes outline-keys {
+    0% {
+        transform: scale(0);
+        outline: solid 20px #1b1b1b;
+        outline-offset: 0;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        outline: solid 0 transparent;
+        outline-offset: 20px;
+        opacity: 0;
+    }
+}
+
+.btn-theme-primary {
+    position: relative;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 1rem 1.5rem;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.btn-theme-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+    z-index: 0;
+    border-radius: inherit;
+}
+
+.btn-theme-primary:hover::before {
+    transform: scaleX(1);
+}
+
+.btn-theme-primary:hover {
+    color: white;
+}
+
+.btn-theme-primary > * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes slideFadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-slide-fade-up {
+    animation: slideFadeUp 1.4s ease-out both;
+}
+
+@keyframes borderPulse {
+    0%, 100% {
+        border-image-slice: 1;
+    }
+    50% {
+        border-image-slice: 2;
+    }
+}
+.animate-border {
+    animation: borderPulse 4s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animate-float-slow {
+    animation-name: float-slow;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Optional: Staggered delay utilities (you can adjust or automate with plugin if needed) */
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+.delay-4 { animation-delay: 1.6s; }
+.delay-5 { animation-delay: 2s; }
+.delay-6 { animation-delay: 2.4s; }
+.delay-7 { animation-delay: 2.8s; }
+.delay-8 { animation-delay: 3.2s; }
+.delay-9 { animation-delay: 3.6s; }
+
+.writing-vertical {
+    writing-mode: vertical-rl;
+}
+
+@keyframes rise-up {
+    0% {
+        transform: translateY(100vh);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+.animate-rise-up {
+    animation-name: rise-up;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rise-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+}
+
+.animate-rise-up {
+    animation-name: rise-up;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* Writing vertically */
+.writing-vertical {
+    writing-mode: vertical-rl;
+}
+
+/* Optional: staggered delays — add more as needed */
+.delay-0 { animation-delay: 0s; }
+.delay-1 { animation-delay: 0.4s; }
+.delay-2 { animation-delay: 0.8s; }
+.delay-3 { animation-delay: 1.2s; }
+.delay-4 { animation-delay: 1.6s; }
+.delay-5 { animation-delay: 2s; }
+.delay-6 { animation-delay: 2.4s; }
+.delay-7 { animation-delay: 2.8s; }
+.delay-8 { animation-delay: 3.2s; }
+.delay-9 { animation-delay: 3.6s; }
+
+.text-draw__box-svg {
+    overflow: visible !important;
+    display: block;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDownExpand {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animate-slide-in-top {
+    animation: slideInTop 0.6s ease-out forwards;
+}
+
+.animate-slide-down-expand {
+    animation: slideDownExpand 0.4s ease-out forwards;
+}
+
+.animate-pop {
+    animation: popUp 0.3s ease-out forwards;
+}
+@keyframes floatInAir {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    20% {
+        transform: translateY(-4px) translateX(2px) rotate(0.3deg);
+    }
+    40% {
+        transform: translateY(3px) translateX(-2px) rotate(-0.2deg);
+    }
+    60% {
+        transform: translateY(-5px) translateX(1px) rotate(0.5deg);
+    }
+    80% {
+        transform: translateY(4px) translateX(-1px) rotate(-0.4deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+}
+
+.float-in-air {
+    animation: floatInAir 6s ease-in-out infinite;
+    will-change: transform;
+}
+
+@keyframes diagonalFloat {
+    0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-5px) translateX(-2px) rotate(-0.5deg);
+    }
+    50% {
+        transform: translateY(-10px) translateX(-4px) rotate(-1deg);
+    }
+    75% {
+        transform: translateY(-5px) translateX(-2px) rotate(-0.5deg);
+    }
+    100% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+    }
+}
+
+.diagonal-float {
+    animation: diagonalFloat 12s ease-in-out infinite;
+    will-change: transform;
+}
+
+.category-label {
+    display: inline-block;
+    transform: rotate(-4deg) skewX(-8deg);
+    transition: transform 0.3s ease;
+    letter-spacing: 1.2px;
+}
+
+.category-label:hover {
+    transform: rotate(-4deg) skewX(-8deg) scale(1.05);
+}
+
+.dark .category-label {
+    box-shadow: 0 0 8px rgba(155, 92, 251, 0.5); /* optional glow */
+}
