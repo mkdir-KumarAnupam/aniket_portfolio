@@ -161,16 +161,16 @@ export const DraggableCardBody = ({ className, children }) => {
           <div className="absolute inset-0 -z-10 rounded-full bg-white/60 backdrop-blur-md shadow-md border border-black/10" />
           <div className="flex gap-6 p-5 rounded-full">
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://linkedin.com/in/aniketku"
               target="_blank"
               rel="noreferrer"
             >
               <Linkedin className="h-6 w-6 text-black hover:scale-110 transition-transform" />
             </a>
-            <a href="mailto:someone@example.com">
+            <a href="mailto:aniket.owin@gmail.com">
               <Mail className="h-6 w-6 text-black hover:scale-110 transition-transform" />
             </a>
-            <a href="tel:+917439449406">
+            <a href="tel:+917980148414">
               <Phone className="h-6 w-6 text-black hover:scale-110 transition-transform" />
             </a>
           </div>
