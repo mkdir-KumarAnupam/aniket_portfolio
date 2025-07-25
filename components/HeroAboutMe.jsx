@@ -48,10 +48,10 @@ const AboutMeBox = ({
         >
           <div className="mt-1 text-sm text-left">
             <p className="font-normal tracking-widest font-sans">
-              Currently working in <span className="text-orange-300">DNEG</span>
-              , I am a passionate designer and photographer who loves blending
-              aesthetics with storytelling. I strive to capture emotions and
-              design meaningful user experiences.
+              Unreal Engine Supervisor at{" "}
+              <span className="text-orange-300">DNEG</span>, I work across
+              virtual production, MoCap, and Real-Time Pipelines blending
+              storytelling with cutting-edge 3D technology.
             </p>
           </div>
 

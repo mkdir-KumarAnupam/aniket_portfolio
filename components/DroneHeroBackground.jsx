@@ -63,7 +63,7 @@ const DroneHeroBackground = ({ darkMode }) => {
             height={1600}
             priority
             className="
-              w-[150%] ml-[15%] max-w-none h-auto object-contain scale-x-[-1]
+              w-[180%] ml-[15%] max-w-none h-auto object-contain scale-x-[-1]
               contrast-[1.4] brightness-110 grayscale
               mask-image-[linear-gradient(to_top,black,transparent)]
             "

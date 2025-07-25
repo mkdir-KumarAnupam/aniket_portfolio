@@ -6,7 +6,10 @@ export const ButtonAboutMe = () => {
       {/* Let's Build Something Button */}
       <div className="group relative cursor-pointer px-4 py-3 w-full sm:w-1/2 border-2 border-black dark:border-white bg-white dark:bg-black rounded-sm overflow-hidden text-black dark:text-white text-center font-sans font-semibold transition-all duration-300">
         {/* Initial Text */}
-        <span className="translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block whitespace-nowrap">
+        <span className="xl:hidden translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block whitespace-nowrap">
+          Let's Work
+        </span>
+        <span className="sm:hidden xl:block translate-x-1 group-hover:translate-x-12 group-hover:opacity-0 transition-all duration-300 inline-block whitespace-nowrap">
           Let's Build Something
         </span>
 

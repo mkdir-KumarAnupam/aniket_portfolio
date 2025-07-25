@@ -70,7 +70,7 @@ export const MyWorkMaster = ({
       <div
         ref={scrollRef}
         className={cn(
-          "relative z-0 flex h-screen justify-start md:justify-center md:flex-row flex-col md:space-x-8 space-x-0 overflow-y-scroll px-4 md:px-6 py-20 scrollbar-hide font-sans transition-colors duration-500 snap-y snap-mandatory",
+          "relative z-0 flex h-screen justify-start  md:flex-row flex-col md:space-x-8 space-x-0 overflow-y-scroll px-4 md:px-6 py-20 scrollbar-hide font-sans transition-colors duration-500 snap-y snap-mandatory",
           darkMode ? "text-white bg-black" : "text-black bg-[#fdfdfd]",
         )}
       >

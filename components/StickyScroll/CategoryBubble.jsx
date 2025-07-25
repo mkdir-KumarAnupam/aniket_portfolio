@@ -9,7 +9,7 @@ const icons = {
   designing: (
     <Image src="/icons/file.svg" alt="designing" width={24} height={24} />
   ),
-  texture: (
+  configuration: (
     <Image src="/icons/client.gif" alt="designing" width={24} height={24} />
   ),
   rigging: (

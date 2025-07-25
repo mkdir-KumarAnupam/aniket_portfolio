@@ -1,121 +1,164 @@
 export const content = [
   {
-    title: "Game Designer at DreamPixel",
+    title: "Serene Cliffside Retreat",
     description:
-      "Designed in-game mechanics and level progression system for a mobile RPG that hit 1M+ downloads.",
-    image: "/images/work_ex_8.png",
+      "A peaceful cliffside retreat in village overlooking in Misty river.",
+    image: [
+      "/images/work_examples/WorldDesign/SereneRetreat1.jpg",
+      "/images/work_examples/WorldDesign/SereneRetreat2.jpg",
+      "/images/work_examples/WorldDesign/SereneRetreat3.jpg",
+    ],
     category: "Designing",
+    tags: ["World Design", "Lighting"],
+    videoAvailable: "/Serene.mp4",
   },
   {
-    title: "Frontend Developer at ZenFlow",
+    title: "The Jungle",
     description:
-      "Implemented smooth animations and lazy-loaded image galleries using React and Framer Motion.",
-    image: "/images/work_ex_4.jpg",
+      "Immersed in the depths of the jungle, where nature's canopy shields the forest floor in shadows and light.",
+    image: [
+      "/images/work_examples/WorldDesign/TheJungle1.jpg",
+      "/images/work_examples/WorldDesign/TheJungle2.jpg",
+      "/images/work_examples/WorldDesign/TheJungle3.jpg",
+    ],
     category: "Designing",
+    tags: ["World Design", "Lighting"],
   },
   {
-    title: "Startup Co-Founder",
+    title: "LIDAR Forest",
     description:
-      "Launched a peer-to-peer skill-sharing platform for creators with over 10K users in 6 months.",
-    image: "/images/work_ex_7.jpg",
+      "A LiDAR Based Forest Creation, where the Center part is Lidar from Real Shoot and surrounding is created inside Unreal Engine",
+    image: [
+      "/images/work_examples/WorldDesign/LidarForest1.jpg",
+      "/images/work_examples/WorldDesign/LidarForest2.jpg",
+      "/images/work_examples/WorldDesign/LidarForest3.jpg",
+    ],
     category: "Designing",
+    tags: ["World Design", "Lighting"],
   },
   {
-    title: "UI/UX Designer at PixelCraft",
+    title: "Inorganic",
     description:
-      "Redesigned the onboarding experience of a mobile banking app, improving conversion rate by 28%.",
-    image: "/images/work_ex_2.jpg",
+      "Unreal Engine Exploration with a Short Rendered Story of a Robot in a Sci-Fi World.",
+    image: "/images/work_examples/inorganic1.png",
     category: "Designing",
+    tags: ["World Design", "Lighting"],
+    videoAvailable: "/Robo.mp4",
   },
   {
-    title: "Freelance Webflow Designer",
-    description:
-      "Crafted sleek landing pages for startups using Webflow, Figma, and Lottie animations.",
-    image: "/images/work_ex_12.png",
-    category: "Designing",
+    title: "MCLaren Artura",
+    description: "Realtime WebGL and AR/VR Configurator ",
+    image: [
+      "/images/work_examples/Config/McLaren1.png",
+      "/images/work_examples/Config/McLaren2.png",
+      "/images/work_examples/Config/McLaren3.png",
+    ],
+    category: "Configuration",
+    tags: ["WebGL", "AR/VR"],
   },
   {
-    title: "Product Intern at MindMesh",
+    title: "MCLaren 765 LT",
     description:
-      "Defined KPIs and led user interviews to improve team collaboration tools for distributed teams.",
-    image: "/images/work_ex_16.png",
-    category: "Designing",
+      "McLaren 765 LT Realtime WebGL and AR/VR Configurator with 3D Model.",
+    image: [
+      "/images/work_examples/Config/McLaren7651.png",
+      "/images/work_examples/Config/McLaren7652.png",
+      "/images/work_examples/Config/McLaren7653.png",
+    ],
+    category: "Configuration",
+    tags: ["WebGL", "AR/VR"],
   },
   {
-    title: "AR/VR Developer",
+    title: "Royal Enfield",
     description:
-      "Built immersive learning simulations for medical students using Unity and Oculus SDK.",
-    image: "/images/work_ex_10.png",
-    category: "Texture",
+      "Royal Enfield a popular motorcycle brand, has a Realtime WebGL and AR/VR Configurator.",
+    image: [
+      "/images/work_examples/Config/Royal1.png",
+      "/images/work_examples/Config/Royal2.png",
+    ],
+    category: "Configuration",
+    tags: ["WebGL", "AR/VR"],
   },
   {
-    title: "IoT Innovator",
+    title: "Dragon",
     description:
-      "Built a home automation system with Raspberry Pi and MQTT, controlled via voice assistant.",
-    image: "/images/work_ex_13.png",
-    category: "Texture",
-  },
-  {
-    title: "Mentor at HackathonX",
-    description:
-      "Guided 20+ student teams on project planning, APIs, and UI polishing at an international hackathon.",
-    image: "/images/work_ex_14.png",
+      "Dragon rigging model with complex animations and physics simulations.",
+    image: [
+      "/images/work_examples/Rigging/Dragon1.png",
+      "/images/work_examples/Rigging/Dragon2.png",
+      "/images/work_examples/Rigging/Dragon3.png",
+    ],
     category: "Rigging",
+    tags: ["Rig"],
   },
   {
-    title: "DevRel at Codeverse",
+    title: "Shiva",
     description:
-      "Hosted livestreams, authored dev blogs, and grew the developer community to 50K+ active users.",
-    image: "/images/work_ex_9.png",
+      "Shiva rigging model with intricate bone structures and dynamic animations.",
+    image: "/images/work_examples/Rigging/Shiva1.png",
     category: "Rigging",
+    tags: ["Rig"],
   },
   {
-    title: "Software Engineer at TechSpire",
+    title: "Raven",
     description:
-      "Developed scalable microservices in Node.js and Docker for a real-time multiplayer gaming backend.",
-    image: "/images/work_ex_3.jpg",
+      "Raven rigging model featuring detailed feather dynamics and realistic flight.",
+    image: "/images/work_examples/Rigging/Raven1.png",
     category: "Rigging",
+    tags: ["Rig"],
+    videoAvailable: "/Raven.mp4",
   },
   {
-    title: "Open Source Contributor",
+    title: "Parvati",
     description:
-      "Contributed to accessibility improvements in Tailwind UI components and filed GitHub issues with repro demos.",
-    image: "/images/work_ex_15.png",
+      "Parvati rigging model showcasing complex facial rigging and expressive animations.",
+    image: "/images/work_examples/Rigging/Parvati2.png",
     category: "Rigging",
+    tags: ["Rig"],
+  },
+
+  {
+    title: "Nature's Symphony",
+    description:
+      "Nature's beauty captured in a serene landscape, where mountains meet the sky and rivers flow through lush valleys.",
+    image: [
+      "/images/work_examples/Photos/Photo1.jpg",
+      "/images/work_examples/Photos/Photo3.jpeg",
+      "/images/work_examples/Photos/Photo4.jpeg",
+    ],
+    category: "Photography",
+    tags: ["Wild Photography"],
   },
   {
-    title: "AI Research Internship",
+    title: "Landscape",
     description:
-      "Collaborated on cutting-edge NLP models at OpenAI, contributing to fine-tuning routines and data augmentation pipelines.",
-    image: "/images/work_ex_1.jpg",
+      "Landscapes that tell stories of the earth, from rolling hills to vast deserts, each frame a testament to nature's artistry.",
+    image: "/images/work_examples/Photos/Photo7.jpg",
     category: "Photography",
+    tags: ["Street Photography"],
   },
   {
-    title: "Tech Speaker & Panelist",
+    title: "Cars and Culture",
     description:
-      "Spoke at Web3 India Summit on decentralization ethics and appeared on 3 global panel discussions.",
-    image: "/images/work_ex_11.png",
+      "Cars on the streets, where culture meets automotive passion, capturing the essence of urban life.",
+    image: [
+      "/images/work_examples/Photos/Photo8.jpg",
+      "/images/work_examples/Photos/Photo9.jpg",
+      "/images/work_examples/Photos/Photo10.jpg",
+    ],
     category: "Photography",
+    tags: ["Vehicles"],
   },
   {
-    title: "Data Analyst at VizScope",
+    title: "Travel Diaries",
     description:
-      "Built interactive dashboards using D3.js and Python to visualize global climate trends over two decades.",
-    image: "/images/work_ex_5.jpg",
+      "Exploring the world through the lens, capturing moments from bustling cities to serene landscapes.",
+    image: [
+      "/images/work_examples/Photos/Travel1.jpg",
+      "/images/work_examples/Photos/Travel2.jpg",
+      "/images/work_examples/Photos/Travel3.jpg",
+    ],
     category: "Photography",
-  },
-  {
-    title: "AI Ethics Researcher",
-    description:
-      "Explored fairness in ML datasets and co-authored a paper on explainable AI frameworks for healthcare.",
-    image: "/images/work_ex_17.PNG",
-    category: "Photography",
-  },
-  {
-    title: "Blockchain Developer",
-    description:
-      "Created a carbon-offsetting dApp using Solidity and IPFS that gamifies eco-friendly behavior.",
-    image: "/images/work_ex_6.jpg",
-    category: "Photography",
+    tags: ["Destination Photography"],
   },
 ];

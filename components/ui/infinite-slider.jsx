@@ -6,8 +6,8 @@ import useMeasure from "react-use-measure";
 
 export function InfiniteSlider({
   children,
-  gap = 16,
-  duration = 25,
+  gap = 13,
+  duration = 55,
   durationOnHover,
   direction = "horizontal",
   reverse = false,
