@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/Spotlight";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { SkeletonLoader } from "./SkeletonLoader";
+import React, { useRef } from "react";
 
 const Card = ({
   item,
@@ -12,16 +13,29 @@ const Card = ({
   darkMode,
   setFullscreenImage,
   getCategoryColor,
+  setActiveCard,
+  refCallback,
 }) => {
-  // Normalize image: first valid one from array or fallback to string
+  const cardRef = useRef(null);
+
+  const handleClick = () => {
+    if (setActiveCard) setActiveCard(index);
+    cardRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   const normalizedImage = Array.isArray(item.image)
     ? item.image.find(Boolean)
     : item.image;
 
   return (
     <div
+      ref={(el) => {
+        cardRef.current = el;
+        if (refCallback) refCallback(el);
+      }}
+      onClick={handleClick}
       className={cn(
-        "relative w-full sm:w-[100%] md:w-[270%] lg:w-[75%] mx-auto border p-5 md:p-6 rounded-3xl snap-start transition-all duration-500 ease-in-out",
+        "relative w-full sm:w-[100%] md:w-[270%] lg:w-[75%] mx-auto border p-5 md:p-6 rounded-3xl snap-start transition-all duration-500 ease-in-out cursor-pointer",
         isActive &&
           "shadow-xl ring-2 ring-offset-2 animate-border backdrop-blur-md",
         isActive
@@ -37,7 +51,6 @@ const Card = ({
     >
       {darkMode && isActive && <Spotlight />}
 
-      {/* Index Bubble */}
       <div
         className={cn(
           "absolute left-[-14px] top-1/2 -translate-y-1/2 w-7 h-7 text-xs font-bold rounded-full flex items-center justify-center border shadow-sm z-10",
@@ -47,7 +60,6 @@ const Card = ({
         {index + 1}
       </div>
 
-      {/* Tag Badges */}
       <div className="flex flex-wrap gap-2 mb-3">
         {item.tags?.map((tag, i) => (
           <div
@@ -64,7 +76,6 @@ const Card = ({
         ))}
       </div>
 
-      {/* Title */}
       <h2
         className={cn(
           "text-xl md:text-2xl font-bold uppercase tracking-tight mb-3 leading-snug transition-colors",
@@ -74,7 +85,6 @@ const Card = ({
         {item.title}
       </h2>
 
-      {/* Description & Image */}
       <div className="mt-2 space-y-3">
         <p
           className={cn(
@@ -93,14 +103,16 @@ const Card = ({
           )}
         </p>
 
-        {/* Mobile Image */}
         <div className="block lg:hidden mt-3">
           {normalizedImage ? (
             <img
               src={normalizedImage}
               alt={item.title}
               className="w-full h-[180px] object-cover rounded-lg transition-opacity duration-500 cursor-pointer opacity-0"
-              onClick={() => setFullscreenImage(normalizedImage)}
+              onClick={(e) => {
+                e.stopPropagation();
+                setFullscreenImage(normalizedImage);
+              }}
               onLoad={(e) => e.currentTarget.classList.remove("opacity-0")}
               loading="lazy"
             />

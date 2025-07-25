@@ -122,6 +122,10 @@ export const MyWorkMaster = ({
                   darkMode={darkMode}
                   setFullscreenImage={setFullscreenImage}
                   getCategoryColor={getCategoryColor}
+                  setActiveCard={setActiveCard}
+                  refCallback={(el) => {
+                    if (el) sectionRefs.current[i] = el; // index-wise ref map
+                  }}
                 />
               );
             })}

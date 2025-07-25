@@ -40,7 +40,7 @@ export const content = [
     title: "Inorganic",
     description:
       "Unreal Engine Exploration with a Short Rendered Story of a Robot in a Sci-Fi World.",
-    image: "/images/work_examples/inorganic1.png",
+    image: "/images/work_examples/Inorganic1.png",
     category: "Designing",
     tags: ["World Design", "Lighting"],
     videoAvailable: "/Robo.mp4",
